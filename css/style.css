@@ -1,0 +1,274 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Olga Rodionova
+Developer @GA in NYC
+*/
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+
+* {
+	-moz-box-sizing: border-box;
+	/* Firexfox */
+	-webkit-box-sizing: border-box;
+	/* Safari/Chrome/iOS/Android */
+	box-sizing: border-box;
+	/* IE */
+}
+/* Clear fix hack */
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+.clear {
+	clear: both;
+}
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px;
+	/* note the padding around a right floated image */
+}
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0;
+	/* note the padding around a left floated image */
+}
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+	color: #000;
+	font-size: 12px;
+	line-height: 1.4;
+	font-family: 'Open Sans', sans-serif;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+
+.container {
+	width: 100%;
+	margin: auto;
+}
+/* header container */
+
+header {
+	color: #ffffff;
+	background: url(../images/header_bg.jpg) no-repeat center top rgb(134, 141, 157);
+	background-size: cover;
+	height: 600px;
+	padding: 30px;
+}
+h1 {
+	font-size: 48px;
+	font-weight: 800;
+	padding-left: 5%;
+	margin: 0;
+}
+h2 {
+	font-size: 48px;
+	text-align: center;
+	font-weight: 400;
+	padding: 40px 0 30px 0;
+}
+sup {
+	font-size: 30px;
+	font-weight: 100;
+}
+.cta-btn {
+	height: 60px;
+	width: 260px;
+	background-color: #F7D306;
+	border-radius: 5px;
+	margin: auto;
+	box-shadow: 3px 3px 0px #353E54;
+	color: #242939;
+	font-weight: 700;
+	line-height: 24px;
+	font-size: 24px;
+	text-align: center;
+	padding: 18px 0 18px 0;
+}
+/* benefits container */
+
+.benefits {
+	background-color: #f0efef;
+	height: 500px;
+	width: 100%;
+	padding: 50px 8% 50px 8%;
+}
+.cta-btn-benefits {
+	height: 60px;
+	width: 260px;
+	background-color: #F7D306;
+	border-radius: 5px;
+	margin: auto;
+	box-shadow: 3px 3px 0px #C1C2C3;
+	color: #242939;
+	font-weight: 700;
+	line-height: 24px;
+	font-size: 24px;
+	text-align: center;
+	padding: 18px 0 18px 0;
+}
+.left-column {
+	width: calc(70% - 50px);
+	float: left;
+	margin-right: 50px;
+}
+h3 {
+	font-weight: 600;
+	font-size: 40px;
+	color: #033048;
+	margin: 0;
+}
+p {
+	font-weight: 200;
+	font-size: 24px;
+	color: #606161;
+}
+li {
+	font-weight: 200;
+	font-size: 24px;
+	color: #606161;
+	padding-top: 15px;
+}
+.right-column {
+	width: 30%;
+	float: left;
+	height: 400px;
+	padding: 170px 0 170px 0;
+}
+/* features container */
+
+.features {
+	height: 400px;
+	background-color: #F7D306;
+	text-align: center;
+	/*center 3 containers inside with inline-block*/
+}
+.feature1 {
+	height: 260px;
+	width: 20%;
+	text-align: center;
+	margin: 50px;
+	display: inline-block;
+}
+.bluebox1 {
+	height: 200px;
+	background-color: #143649;
+}
+.feature-name {
+	font-size: 26px;
+	color: #033048;
+	padding-top: 20px;
+}
+.feature2 {
+	height: 260px;
+	/*background-color: white;*/
+	width: 20%;
+	text-align: center;
+	margin: 50px;
+	display: inline-block;
+}
+.bluebox2 {
+	height: 200px;
+	background-color: #143649;
+}
+.feature3 {
+	height: 260px;
+	width: 20%;
+	text-align: center;
+	margin: 50px;
+	display: inline-block;
+}
+.bluebox3 {
+	height: 200px;
+	background-color: #143649;
+}
+/* quote container*/
+
+.quote {
+	height: 400px;
+	background: url(../images/testimonial_bg.jpg);
+	background-size: cover;
+	color: white;
+	font-family: 'Open Sans';
+	font-weight: 100;
+	font-size: 30px;
+	font-style: italic;
+	padding: 100px 300px 100px 300px;
+	text-align: center;
+	line-height: 1.4;
+}
+.quote-name {
+	color: white;
+	font-size: 30px;
+	font-style: normal;
+	font-weight: normal;
+}
+/* cta banner container*/
+
+.cta-banner {
+	height: 160px;
+	background-color: #F7D306;
+	text-align: center;
+	padding: 50px 0 50px 0;
+}
+.cta-banner-btn {
+	height: 60px;
+	width: 260px;
+	background-color: #143649;
+	border-radius: 5px;
+	margin: auto;
+	color: white;
+	font-weight: 700;
+	line-height: 24px;
+	font-size: 24px;
+	text-align: center;
+	padding: 18px 0 18px 0;
+	box-shadow: 3px 3px 0px #B9A536;
+}
+footer {
+	background-color: #121212;
+	color: white;
+	text-align: center;
+	height: 350px;
+	margin: 0;
+}
+.footer-company {
+	color: #F7D306;
+	font-size: 48px;
+	font-weight: 700;
+	margin: 0;
+	padding-top: 50px;
+}
+.facebook {
+	margin-right: 30px;
+	margin-top: 50px;
+}
+.twitter {
+	margin-left: 30px;
+	margin-top: 50px;
+}
+.copyright-text {
+	font-size: 18px;
+	color: white;
+	font-weight: 100;
+	margin-top: 50px;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
